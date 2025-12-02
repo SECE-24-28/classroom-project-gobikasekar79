@@ -1,0 +1,76 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.header {
+    background: #2d59d8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* QUESTIONS */
+.question {
+    background: rgb(182, 234, 255);   /* sky blue color */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+/* BOX MODEL EXAMPLE */
+.box-example {
+    background: rgb(226, 255, 163);
+    border: 5px solid rgb(9, 6, 240);
+    padding: 20px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+/* FIXED BUTTON */
+.fixed-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 20px;
+    background: #2d59d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.fixed-btn:hover {
+    background: #1e3ea8;
+}
