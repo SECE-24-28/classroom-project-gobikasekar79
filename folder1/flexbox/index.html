@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Flexbox Concepts - Basic HTML Demo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>All Flexbox Concepts - Basic HTML Demo</h2>
+
+<h3>1. Display: Flex</h3>
+<p>This enables Flexbox layout in a container.</p>
+<div class="flexbox container1">
+    <div class="item">Box 1</div>
+    <div class="item">Box 2</div>
+    <div class="item">Box 3</div>
+</div>
+
+<h3>2. Flex Direction</h3>
+<p>Defines the direction of the row or column.</p>
+
+<div class="flexbox direction-row">
+    <div class="item wide">Column 1</div>
+</div>
+
+<div class="flexbox direction-column">
+    <div class="item">Row 1</div>
+</div>
+
+
+<h3>3. Justify Content</h3>
+<p>Controls alignment along the main axis.</p>
+
+<div class="flexbox justify">
+    <div class="item">Center</div>
+    <div class="item">Around</div>
+</div>
+
+
+<h3>4. Align Items</h3>
+<p>Controls alignment along the cross axis.</p>
+
+<div class="flexbox align-items">
+    <div class="item small">Top</div>
+    <div class="item tall">Tall</div>
+    <div class="item short">Short</div>
+</div>
+
+
+<h3>5. Flex Wrap</h3>
+<p>Allows items to wrap into multiple lines.</p>
+
+<div class="flexbox wrap">
+    <div class="item">Box 1</div>
+    <div class="item">Box 2</div>
+    <div class="item">Box 3</div>
+    <div class="item">Box 4</div>
+</div>
+
+
+<h3>6. Gap</h3>
+<p>Space between items.</p>
+
+<div class="flexbox gap">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</div>
+
+
+<h3>7. Flex Grow</h3>
+<p>Defines how much a flex item grows relative to others.</p>
+
+<div class="flexbox grow">
+    <div class="item grow1">Grow 1</div>
+    <div class="item grow2">Grow 2</div>
+</div>
+
+
+<h3>8. Flex Shrink</h3>
+<p>Defines how an item shrinks when container is small.</p>
+
+<div class="flexbox shrink">
+    <div class="item shrink1">Shrink</div>
+    <div class="item noshrink">No Shrink</div>
+</div>
+
+
+<h3>9. Flex Basis</h3>
+<p>Initial size of an item before space is distributed.</p>
+
+<div class="flexbox basis">
+    <div class="item basis150">150px Basis</div>
+    <div class="item basisauto">Auto</div>
+</div>
+
+<h3>10. Order</h3>
+<p>Controls the order in which items appear.</p>
+
+<div class="flexbox order-demo">
+    <div class="item order2">Order 2</div>
+    <div class="item order0">Default</div>
+    <div class="item order1">Order 1</div>
+</div>
+
+
+<h3>11. Align Self</h3>
+<p>Overrides align-items for individual items.</p>
+
+<div class="flexbox align-self-demo">
+    <div class="item self-top">Top</div>
+    <div class="item self-center">Center</div>
+    <div class="item self-bottom">Bottom</div>
+</div>
+
+</body>
+</html>

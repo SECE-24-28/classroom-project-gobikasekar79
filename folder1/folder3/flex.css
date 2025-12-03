@@ -1,0 +1,38 @@
+.flexContainer{
+    border:1px solid red;
+    display:flex;
+    height:90vh;
+    /*justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-direction:column-reverse;
+    justify-content:flex-end;
+    align-items:center;*/
+    /*flex-wrap:wrap;*/
+    /*flex-direction:row;*/
+    align-content:center;
+}
+
+.flexItem{
+    background-color: yellow;
+    border:2px solid red;
+    color:red;
+    font-size:24px;
+    height:60px;
+    width:80px;
+}
+/* Values of flex direction
+Row,row-reverse,column,column-reverse*/
+/*values of align items
+flex-start,flex-end,center,baseline*/
+/* to place item at the end amd we have to use greater value from 0 to put in startung we need negative value
+to defaut ver oredr oif elememt is 0*/
+.flexItem:nth-child(1){
+    order:1;
+    align-self:center;
+}
+
+.flexItem:nth-child(6){
+    order:-1;
+    align-self:flex-end;
+}
