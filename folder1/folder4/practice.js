@@ -78,19 +78,18 @@ const addTenWithDefault = (...nums) => {
     return nums.map(n => n + 10);
 };
 
-console.log(addTenWithDefault());         // [11, 12, 13]
+console.log(addTenWithDefault());         
 console.log(addTenWithDefault(5, 15));  
 
 //8
 const createFruitArray = (...fruits) => {
     if (fruits.length === 0) {
-        return ["apple", "banana"];   // default
+        return ["apple", "banana"];   
     }
-    return fruits;   // return passed values
+    return fruits;   
 };
 
 console.log(createFruitArray()); 
-// ["apple", "banana"]
 
 console.log(createFruitArray("mango", "orange"));
-// ["mango", "orange"]
+

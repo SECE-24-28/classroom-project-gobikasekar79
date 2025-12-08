@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Feedback Form</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  /* Center Form */
+  #feedbackForm {
+    width: 40%;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  #feedbackForm input,
+  #feedbackForm select,
+  #feedbackForm textarea {
+    width: 90%;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+  }
+
+  #feedbackForm textarea {
+    height: 80px;
+    resize: none;
+  }
+
+  #feedbackForm button {
+    margin-top: 15px;
+    width: 70%;
+    padding: 12px;
+    background: #1a73e8;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #feedbackForm button:hover {
+    background: #0c56c0;
+  }
+
+  /* Output Cards */
+  #output {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .card {
+    background: #dff0d8;
+    width: 280px;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    border-left: 5px solid #2e8b57;
+  }
+
+  .card p {
+    margin: 6px 0;
+    font-size: 15px;
+  }
+
+  .card b {
+    color: #333;
+  }
+</style>
+
+</head>
+<body>
+
+<h2>Student Feedback Form</h2>
+
+<form id="feedbackForm">
+  <input type="text" id="name" placeholder="Enter your name" required />
+
+  <select id="course" required>
+    <option value="">Select Course</option>
+    <option>HTML & CSS</option>
+    <option>JavaScript</option>
+    <option>React JS</option>
+    <option>Node JS</option>
+  </select>
+
+  <label style="margin-top:15px; display:block;">Rating (1 to 5):</label>
+  <input type="range" id="rating" min="1" max="5" value="3" />
+
+  <textarea id="feedback" placeholder="Write your feedback..." required></textarea>
+
+  <button type="submit">Submit Feedback</button>
+</form>
+
+<div id="output"></div>
+
+<!-- Link JS file -->
+<script src="feedback.js"></script>
+
+</body>
+</html>
